@@ -1,4 +1,6 @@
 from django.db import models
+from django.db.models.fields import (SlugField, CharField,
+                                     DecimalField, ForeignKeyField)
 from django.utils.translation import ugettext as _
 
 # Represents maps for an area.

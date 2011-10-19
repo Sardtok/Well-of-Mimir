@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models.fields import ForeignKeyField, ManyToManyField
 from django.contrib.auth.models import User
 from django.utils.translation import ugettext as _
 

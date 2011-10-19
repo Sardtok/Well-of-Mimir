@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models.fields import DecimalField, ForeignKeyField
 from django.utils.translation import ugettext as _
 
 from mimir.models.area import Area

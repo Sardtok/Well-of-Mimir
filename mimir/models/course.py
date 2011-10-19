@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models.fields import CharField
 from django.utils.translation import ugettext as _
 
 # Represents courses that students can ask questions about
