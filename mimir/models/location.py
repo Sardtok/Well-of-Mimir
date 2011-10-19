@@ -12,5 +12,5 @@ class Location(models.Model):
         verbose_name_plural = _("Locations")
 
     area = ForeignKey(Area, verbose_name=_("Area"));
-    x = DecimalField()
-    y = DecimalField()
+    x = DecimalField(max_digits=5, decimal_places=4)
+    y = DecimalField(max_digits=5, decimal_places=4)
