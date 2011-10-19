@@ -10,7 +10,7 @@ class Oracle (models.Model):
     class Meta:
         app_label = "mimir"
         verbose_name = _("Oracle")
-        verbose_plural = _("Oracles")
+        verbose_name_plural = _("Oracles")
 
     user = ForeignKeyField(User, related_name="oracles", verbose_name=_("User"))
     courses = ManyToManyField(Course, related_name="oracles", verbose_name=_("Courses"), blank=True)

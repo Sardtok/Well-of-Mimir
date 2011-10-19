@@ -7,7 +7,7 @@ class Course(models.Model):
     class Meta:
         app_label = "mimir"
         verbose_name = _("Course")
-        verbose_plural = _("Courses")
+        verbose_name_plural = _("Courses")
     
     # Length was arbitrarily chosen - may be extended in the future
     name = CharField(max_length=50)

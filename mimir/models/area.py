@@ -9,7 +9,7 @@ class Area(models.Model):
     class Meta:
         app_label = "mimir"
         verbose_name = _("Area")
-        verbose_plural = _("Areas")
+        verbose_name_plural = _("Areas")
 
     short_name = SlugField()
     full_name = CharField()

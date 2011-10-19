@@ -9,7 +9,7 @@ class Computer(models.Model):
     class Meta:
         app_label = "mimir"
         verbose_name = _("Computer")
-        verbose_plural = _("Computers")
+        verbose_name_plural = _("Computers")
 
     location = ForeignKeyField(Location, related_name="computer", verbose_name=_("Location"))
 

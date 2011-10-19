@@ -9,7 +9,7 @@ class QueuePlacement(models.Model):
     class Meta:
         app_label = "mimir"
         verbose_name = _("Queue placement")
-        verbose_plural = _("Queue placements")
+        verbose_name_plural = _("Queue placements")
 
     location = ForeignKeyField(Location, verbose_name=_("Location"))
     course = ForeignKeyField(Course, verbose_name=_("Course"), blank=True)
