@@ -12,11 +12,11 @@ class Area(models.Model):
         verbose_name_plural = _("Areas")
 
     short_name = SlugField()
-    full_name = CharField()
+    full_name = CharField(max_length=50)
     image_type = SlugField()
 
     parent = ForeignKey('self', related_name="areas", blank=True)
-    height = DecimalField(blank=True)
-    width = DecimalField(blank=True)
-    x = DecimalField(blank=True)
-    y = DecimalField(blank=True)
+    height = DecimalField(max_digits=5, decimal_places=4, blank=True)
+    width = DecimalField(max_digits=5, decimal_places=4, blank=True)
+    x = DecimalField(max_digits=5, decimal_places=4, blank=True)
+    y = DecimalField(max_digits=5, decimal_places=4, blank=True)
