@@ -1,5 +1,5 @@
 from django.db import models
-from django.db.models.fields import SlugField, CharField, ForeignKeyField
+from django.db.models import SlugField, CharField, ForeignKey
 from django.utils.translation import ugettext as _
 
 from mimir.models.location import Location
@@ -11,7 +11,7 @@ class Computer(models.Model):
         verbose_name = _("Computer")
         verbose_name_plural = _("Computers")
 
-    location = ForeignKeyField(Location, related_name="computer", verbose_name=_("Location"))
+    location = ForeignKey(Location, related_name="computer", verbose_name=_("Location"))
 
     # I'd like to do conversion to int, as it requires less space to store,
     # but it requires processing as we get the IP as a string

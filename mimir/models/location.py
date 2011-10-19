@@ -1,5 +1,5 @@
 from django.db import models
-from django.db.models.fields import DecimalField, ForeignKeyField
+from django.db.models import DecimalField, ForeignKey
 from django.utils.translation import ugettext as _
 
 from mimir.models.area import Area
@@ -11,6 +11,6 @@ class Location(models.Model):
         verbose_name = _("Location")
         verbose_name_plural = _("Locations")
 
-    area = ForeignKeyField(Area, verbose_name=_("Area"));
+    area = ForeignKey(Area, verbose_name=_("Area"));
     x = DecimalField()
     y = DecimalField()

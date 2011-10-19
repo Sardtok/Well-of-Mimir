@@ -1,6 +1,6 @@
 from django.db import models
-from django.db.models.fields import (SlugField, CharField,
-                                     DecimalField, ForeignKeyField)
+from django.db.models import (SlugField, CharField,
+                                     DecimalField, ForeignKey)
 from django.utils.translation import ugettext as _
 
 # Represents maps for an area.
@@ -15,7 +15,7 @@ class Area(models.Model):
     full_name = CharField()
     image_type = SlugField()
 
-    parent = ForeignKeyField(Map, related_name="areas", blank=True)
+    parent = ForeignKey('self', related_name="areas", blank=True)
     height = DecimalField(blank=True)
     width = DecimalField(blank=True)
     x = DecimalField(blank=True)
