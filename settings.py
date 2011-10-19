@@ -79,7 +79,7 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
-    'mimir.core',
+    'mimir',
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
 )

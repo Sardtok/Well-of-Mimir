@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.utils.translation import ugettext as _
 
-from mimir.core.models.course import Course
+from mimir.models.course import Course
 
 # Data about an oracle/TA in the system
 class Oracle (models.Model):

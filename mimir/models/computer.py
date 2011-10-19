@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils.translation import ugettext as _
 
-from mimir.core.models.location import Location
+from mimir.models.location import Location
 
 # A computer registered in the system with a location
 class Computer(models.Model):

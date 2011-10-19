@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils.translation import ugettext as _
 
-from mimir.core.models.area import Area
+from mimir.models.area import Area
 
 # Represents a location in a map.
 class Location(models.Model):
